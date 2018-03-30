@@ -1,0 +1,420 @@
+html, body {
+    height: 100%;
+    position: relative;
+    font-size: 100%;
+    font-weight: 400;
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+sup {
+    font-size: .7em;
+    line-height: normal;
+    vertical-align: super;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.wrapper ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.page-container {
+    margin: 0 auto;
+    padding: 16px 0 1em 0;
+    width: 868px;
+}
+
+.page-container a {
+    color: rgb(0, 0, 238);
+}
+
+/*************************************************************************************************
+left column
+**************************************************************************************************/
+#left-bar {
+    float: left;
+    width: 20%;
+    min-width: 10em;
+    min-height: 860px;
+    margin: 0;
+    font-size: smaller;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+/* craigslist logo */
+.page-container #logo {
+    font-size: 235%;
+    line-height: 135%;
+    font-weight: 500;
+    font-family: Times New Roman, Times, serif;
+    width: 100%;
+}
+
+/* craigslist logo superscript */
+.page-container #logo sup {
+    font-size: .4em;
+}
+
+.page-container #postLinks {
+    margin: 17px 0;
+    padding: 0;
+}
+
+.page-container #postLinks li {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+/* post to classifields */
+.page-container #postLinks li:first-child a {
+    padding: 2px .5em;
+    background-color: #ffc;
+}
+
+/* search form */
+.page-container #left-bar #search {
+    margin-bottom: 1em;
+}
+
+/* search box */
+.page-container #query {
+    font-size: 18px;
+    width: 9em;
+    border-radius: 3px;
+    margin: 0;
+    padding: 2px;
+}
+
+/* Calendar title */
+.page-container #cal-banner {
+    font-weight: bold;
+    margin: 2px;
+    text-align: center;
+    font-size: 100%;
+}
+
+/* calendar */
+#left-bar .calendar {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100%;
+}
+
+/* calendar */
+#left-bar .calendar .today {
+    background-color: #ffc;
+}
+
+#left-bar .calendar th,
+#left-bar .calendar td {
+    border: 1px solid #ccc;
+    font-weight: 400;
+}
+
+/* days */
+#left-bar .calendar .days {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ccc;
+}
+
+/* days */
+#left-bar .calendar tbody {
+    background-color: white;
+}
+
+#left-bar .leftLinks {
+    margin-top: 2em;
+    padding: 0;
+}
+
+#left-bar .leftLinks li {
+    padding: 2px 0;
+}
+
+/*************************************************************************************************
+center column
+**************************************************************************************************/
+#center {
+    margin: 0 2% 2% 2%;
+    padding: 0;
+    text-align: center;
+    width: 62%;
+    float: left;
+    font-weight: 400;
+}
+
+/* Top navbar */
+#center .topbar {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
+    min-height: 2.5em;
+    padding: 0;
+    font-weight: normal;
+    height: 40px;
+}
+
+#center .topbar ul li {
+    display: inline-block;
+    padding: 0 4px;
+}
+
+/* current craigslist area */
+#center .area {
+    display: inline-block;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: Times New Roman, Times,serif;
+}
+
+/* nearby craigslist areas */
+#center .sublinks {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.1em;
+    margin: 3px 0 0 7px;
+    padding: 0;
+}
+
+#center .sublinks li {
+    float: left;
+    background-color: white;
+    margin: -1px 3px;
+    padding: 2px 5px;
+}
+
+/*************************************************************************************************
+center column content
+**************************************************************************************************/
+#center .content {
+    margin-top: 3%;
+}
+
+/* all lists inside center */
+#center .content ul {
+    margin-bottom: 0;
+}
+
+/* all category titles */
+#center .content .section-title {
+    margin-bottom: 3px;
+    background-color: #eee;
+    font-size: 100%;
+    clear: both;
+}
+
+#center .content .section-title h4 {
+    padding: 2px 5px;
+    font-weight: bold;
+    font-size: 100%;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+#center .content .section-title h4 a {
+    padding: 0 5px;
+    display: block;
+}
+
+/* all category content */
+#center .content .section-content {
+    float: left;
+    font-size: 100%;
+    margin: 0 0 3px 0;
+    width: 100%;
+}
+
+/* all lists in categories */
+#center .content .section-content ul {
+    float: left;
+    font-size: smaller;
+    margin: 0;
+    padding-bottom: 1em;
+    vertical-align: baseline;
+}
+
+/* each list item */
+#center .content .section-content ul li {
+    text-align: left;
+}
+
+/* each list item anchor */
+#center .content .section-content ul li a {
+    border-bottom: 1px solid #eaeaea;
+    padding: 0 0 1px 0;
+    width: 100%;
+    display: block;
+}
+
+/* first list in each category */
+#center .content .section-content .column-0 {
+    padding-left: 0;
+}
+
+/*************************************************
+left column within center column
+**************************************************/
+#center .content-left-col {
+    float: left;
+    width: 33%;
+}
+
+/* community */
+#center .content .community .column-1 {
+    padding: 0 0 1em 22px;
+}
+
+/* services */
+#center .content .services .column-1 {
+    padding: 0 0 1em 22px;
+}
+
+/* discussion forums */
+#center .content .discussion-forums ul {
+    font-size: 68%;
+    padding: 0 0 1em 30px;
+}
+
+#center .content .discussion-forums .column-0 {
+    padding-left: 0;
+}
+
+/*************************************************
+center column within center column
+**************************************************/
+#center .content .content-center-col {
+    width: 37%;
+    float: left;
+    margin: 0 4%;
+}
+
+/* housing */
+#center .content .content-center-col .housing .column-0 {
+    width: 100%;
+}
+
+/* for sale */
+#center .content .content-center-col .for-sale .column-1 {
+    padding: 0 0 1em 22px;
+}
+
+/* personals */
+#center .content .content-center-col .personals .column-0 {
+    width: 100%;
+}
+/*************************************************
+right column within center column
+**************************************************/
+#center .content .content-right-col {
+    float: left;
+    width: 22%;
+}
+
+/* gigs column 0 */
+#center .content .content-right-col .gigs .column-0 {
+    max-width: 44%;
+}
+
+/* gigs column 1 */
+#center .content .content-right-col .gigs .column-1 {
+    padding: 0 0 1em 22px;
+}
+
+/*************************************************************************************************
+right column
+**************************************************************************************************/
+#right-bar {
+    background-color: #f4f4f4;
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    float: left;
+    min-width: 10em;
+    font-size: 70%;
+    line-height: 1.43em;
+    min-height: 850px;
+    padding: 5px 0;
+    text-align: center;
+    vertical-align: top;
+    width: 11%;
+}
+
+#langlinks {
+    padding: 8px;
+    font-size: small;
+}
+
+#langlinks select {
+    width: 100%;
+    height: 19px;
+}
+
+#right-bar .menu-collapsible {
+    font-size: 100%;
+    margin: 4px;
+}
+
+#right-bar .menu-collapsible .collapse-header h5 {
+    font-size: 100%;
+    padding: 2px 5px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    color: #00E;
+}
+
+#right-bar ul {
+    padding: 0; margin: 4px;
+}
+
+#right-bar .menu-collapsible .nearby-cl h5 {
+    background-color: white;
+}
+
+/*************************************************************************************************
+footer
+**************************************************************************************************/
+footer {
+    border-top: 1px solid #ccc;
+    line-height: 1.5em;
+    min-height: 1.1em;
+    background: #eee;
+    padding: 5px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.cl-footer {
+    padding: 0;
+}
+
+.cl-footer li {
+    display: inline;
+    padding: 0 4px;
+    font-size: small;
+}
