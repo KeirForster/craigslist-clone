@@ -13,8 +13,8 @@
     <title>Craigslist Clone</title>
 </head>
 
-<body>
-<div class="wrapper">
+<body ng-app="testApp">
+<div class="wrapper" ng-a>
     <section class="page-container">
         <!-- Left column-->
         <div id="left-bar">
@@ -43,9 +43,7 @@
                         <th>S</th>
                     </tr>
                 </thead>
-                <tbody>
-                <script>onload = function() { MyCal.buildCalendar(document.querySelector('#left-bar .calendar tbody')); };</script>
-                </tbody>
+                <tbody></tbody>
             </table>
             <ul class="leftLinks">
                 <li><a href="">help, faq, abuse, legal</a></li>

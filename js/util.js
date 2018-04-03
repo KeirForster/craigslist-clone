@@ -1,20 +1,30 @@
 (function() {
-    disableLinks();
-    disableOnClick();
+    disableHomePageLinks();
+    addHrefToEnabledLinks();
+    buildHomepageCalendar();
+
+    function disableHomePageLinks()
+    {
+        disableLinks();
+        disableOnClick();
+    }
 
     function disableLinks()
     {
         let disabledLinks = '.page-container a, .page-container h5';
-        let enabledLinks = '.page-container #left-bar #logo a, ' +
-                '.page-container #center .content .content-center-col .for-sale a';
+        let enabledLinks = `.page-container #left-bar #logo a, 
+            .page-container #left-bar #postLinks a,
+            .page-container #center .content .content-center-col .for-sale a`;
 
         let disabledElems = document.querySelectorAll(disabledLinks);
         let enabledElems = document.querySelectorAll(enabledLinks);
 
+        // disable all links
         disabledElems.forEach((elem) =>
         {
             elem.classList.add('disabled');
         });
+        // enable specified links
         enabledElems.forEach((elem) =>
         {
             elem.classList.remove('disabled');
@@ -26,10 +36,28 @@
         let disabledLinks = document.querySelectorAll('.page-container a.disabled');
         disabledLinks.forEach((elem) =>
         {
-            elem.onclick = (e) =>
-            {
-                e.preventDefault();
-            };
+            elem.onclick = (e) => { e.preventDefault(); };
         });
+    }
+
+    function addHrefToEnabledLinks()
+    {
+        let enabledLinks =
+        [
+            {
+                'elem' : document.querySelector('.page-container #left-bar #postLinks li:nth-child(1) a'),
+                'href' : 'post.php'
+            }
+        ];
+
+        enabledLinks.forEach((entry) =>
+        {
+            entry.elem.href = entry.href;
+        })
+    }
+
+    function buildHomepageCalendar()
+    {
+        MyCal.buildCalendar(document.querySelector('.page-container #left-bar .calendar tbody'));
     }
 })();
