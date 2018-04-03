@@ -1,5 +1,6 @@
 (function() {
     disableHomePageLinks();
+    addHrefToEnabledLinks();
     buildHomepageCalendar();
 
     function disableHomePageLinks()
@@ -18,10 +19,12 @@
         let disabledElems = document.querySelectorAll(disabledLinks);
         let enabledElems = document.querySelectorAll(enabledLinks);
 
+        // disable all links
         disabledElems.forEach((elem) =>
         {
             elem.classList.add('disabled');
         });
+        // enable specified links
         enabledElems.forEach((elem) =>
         {
             elem.classList.remove('disabled');
@@ -33,11 +36,24 @@
         let disabledLinks = document.querySelectorAll('.page-container a.disabled');
         disabledLinks.forEach((elem) =>
         {
-            elem.onclick = (e) =>
-            {
-                e.preventDefault();
-            };
+            elem.onclick = (e) => { e.preventDefault(); };
         });
+    }
+
+    function addHrefToEnabledLinks()
+    {
+        let enabledLinks =
+        [
+            {
+                'elem' : document.querySelector('.page-container #left-bar #postLinks li:nth-child(1) a'),
+                'href' : 'post.php'
+            }
+        ];
+
+        enabledLinks.forEach((entry) =>
+        {
+            entry.elem.href = entry.href;
+        })
     }
 
     function buildHomepageCalendar()

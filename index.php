@@ -13,8 +13,8 @@
     <title>Craigslist Clone</title>
 </head>
 
-<body>
-<div class="wrapper">
+<body ng-app="testApp">
+<div class="wrapper" ng-a>
     <section class="page-container">
         <!-- Left column-->
         <div id="left-bar">
