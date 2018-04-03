@@ -1,12 +1,19 @@
 (function() {
-    disableLinks();
-    disableOnClick();
+    disableHomePageLinks();
+    buildHomepageCalendar();
+
+    function disableHomePageLinks()
+    {
+        disableLinks();
+        disableOnClick();
+    }
 
     function disableLinks()
     {
         let disabledLinks = '.page-container a, .page-container h5';
-        let enabledLinks = '.page-container #left-bar #logo a, ' +
-                '.page-container #center .content .content-center-col .for-sale a';
+        let enabledLinks = `.page-container #left-bar #logo a, 
+            .page-container #left-bar #postLinks a,
+            .page-container #center .content .content-center-col .for-sale a`;
 
         let disabledElems = document.querySelectorAll(disabledLinks);
         let enabledElems = document.querySelectorAll(enabledLinks);
@@ -31,5 +38,10 @@
                 e.preventDefault();
             };
         });
+    }
+
+    function buildHomepageCalendar()
+    {
+        MyCal.buildCalendar(document.querySelector('.page-container #left-bar .calendar tbody'));
     }
 })();
