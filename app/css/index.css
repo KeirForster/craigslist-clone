@@ -46,13 +46,15 @@ sup {
 
 /* disabled links */
 .page-container a.disabled,
-.page-container #right-bar .menu-collapsible .collapse-header h5.disabled {
+.page-container #right-bar .menu-collapsible .collapse-header h5.disabled,
+.wrapper footer a {
     color: #6c757d;
     cursor: default;
 }
 /* disabled links on hover */
 .page-container a.disabled:hover,
-.page-container #right-bar .menu-collapsible .collapse-header h5.disabled:hover {
+.page-container #right-bar .menu-collapsible .collapse-header h5.disabled:hover,
+.wrapper footer a:hover {
     text-decoration: none;
 }
 

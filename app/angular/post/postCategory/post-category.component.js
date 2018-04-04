@@ -3,7 +3,7 @@ angular.
     module('postCategory').
     component('postCategory',
     {
-        templateUrl: 'js/app/postToClassifields/postCategory/post-category.template.html',
+        templateUrl: 'angular/post/postCategory/post-category.template.html',
         controller: ['$http', '$routeParams', postCategoryController]
     });
 
