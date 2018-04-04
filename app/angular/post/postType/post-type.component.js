@@ -3,7 +3,7 @@ angular.
     module('postType').
     component('postType',
     {
-        templateUrl: 'js/app/postToClassifields/postType/post-type.template.html',
+        templateUrl: 'angular/post/postType/post-type.template.html',
         controller: ['$http', '$routeParams', postTypeController]
     });
 
