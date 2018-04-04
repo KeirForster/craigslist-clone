@@ -1,0 +1,11 @@
+
+/* disabled links */
+.wrapper a.disabled {
+    color: #6c757d;
+    cursor: default;
+}
+
+/* disabled links on hover */
+.wrapper a.disabled:hover {
+    text-decoration: none;
+}

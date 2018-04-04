@@ -1,2 +1,2 @@
-// Define the `testApp` module
+// Define the `postCategory` module
 angular.module('postCategory', ['ngRoute']);
