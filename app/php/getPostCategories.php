@@ -4,4 +4,4 @@
     require 'db/SqlQuery.php';
     
     $db = new DbUtil();
-    $db->getSubCategories();
+    $db->getCategories();

@@ -13,7 +13,7 @@
     <title>Craigslist Clone</title>
 </head>
 <body>
-    <div ng-app="postTypeApp">
+    <div class="wrapper" ng-app="postApp">
         <div ng-view></div>
     </div>
 <!-- angular.js -->
@@ -23,11 +23,13 @@
 <script src="angular/post/app.module.js"></script>
 <script src="angular/post/app.config.js"></script>
 <!-- post-type app -->
-<script src="angular/post/postType/post-type.module.js"></script>
-<script src="angular/post/postType/post-type.component.js"></script>
+<script src="angular/post/types/post-type.module.js"></script>
+<script src="angular/post/types/post-type.component.js"></script>
 <!-- post-category app -->
-<script src="angular/post/postCategory/post-category.module.js"></script>
-<script src="angular/post/postCategory/post-category.component.js"></script>
+<script src="angular/post/categories/post-category.module.js"></script>
+<script src="angular/post/categories/post-category.component.js"></script>
+<!-- disable links -->
+<script src="js/post/util.js"></script>
 <!-- bootstrap -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

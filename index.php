@@ -14,10 +14,11 @@
 </head>
 <body>
 <div class="wrapper" ng-app="homepageApp">
-    <homepage-app></homepage-app>
+    <home></home>
 </div>
 <!-- angular.js -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
 <!-- homepage app -->
 <script src="app/angular/homepage/app.module.js"></script>
 <script src="app/angular/homepage/app.component.js"></script>
@@ -27,8 +28,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- my scripts -->
 <!-- build calendar -->
-<script src="app/js/myCal.js"></script>
+<script src="app/js/homepage/myCal.js"></script>
 <!-- disable/ enable links -->
-<script src="app/js/util.js"></script>
+<script src="app/js/homepage/util.js"></script>
 </body>
 </html>

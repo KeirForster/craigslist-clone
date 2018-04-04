@@ -3,7 +3,7 @@ angular.
     module('postCategory').
     component('postCategory',
     {
-        templateUrl: 'angular/post/postCategory/post-category.template.html',
+        templateUrl: 'angular/post/categories/post-category.template.html',
         controller: ['$http', '$routeParams', postCategoryController]
     });
 
@@ -13,6 +13,9 @@ function postCategoryController($http, $routeParams)
     $http.get('php/getPostCategories.php').then((response) =>
     {
         this.categories = response.data;
-        this.postCategoryId = $routeParams.postCategoryId;
+        this.typeId = $routeParams.typeId;
+        angular.element(() => {
+            DisableLinks.disablePostTypePageLinks();
+        });
     });
 }

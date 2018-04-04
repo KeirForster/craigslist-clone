@@ -1,0 +1,10 @@
+<ul>
+    <span ng-repeat="type in $ctrl.types">
+        <li>
+            <a ng-href="#!/type/{{type.type_id}}">{{type.type_desc}}</a>
+        </li>
+        <li ng-if="type.hasSecondaryDesc()">
+            <a ng-href="#!/type/{{type.type_id}}">{{type.type_secondary_desc}}</a>
+        </li>
+    </span>
+</ul>

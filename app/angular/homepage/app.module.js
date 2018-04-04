@@ -1,2 +1,2 @@
 // Define the `homepageApp` module
-angular.module('homepageApp', []);
+angular.module('homepageApp', ['ngRoute']);
